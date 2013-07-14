@@ -69,4 +69,20 @@ $(document).ready(function() {
     $('[data-type="time"] .update-time').html(timeString);
   }
   setInterval(updateTime, 500);
+
+  function updateWeather() {
+    $.ajax({
+      type: "POST",
+      dataType: "jsonp",
+      url: 'http://api.openweathermap.org/data/2.5/weather?q=Prague,cz',
+      success: function(data) {
+        var num =  parseFloat(data.main.temp - 273.15).toFixed(1)
+        var ico =  "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+        $('.update-weather').html(num + " &deg;C");
+        $('.update-weather').css('background-image', 'url('+ico+')');
+      }
+    });
+  }
+  updateWeather();
+  setInterval(updateTime, 60000);
 });
