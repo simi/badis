@@ -66,7 +66,7 @@ $(document).ready(function() {
     var timeString = ('0' + now.getHours()).slice(-2) + ':'
     + ('0' + (now.getMinutes())).slice(-2) + ':'
     + ('0' + (now.getSeconds())).slice(-2);
-    $('[data-type="time"] h1').html(timeString);
+    $('[data-type="time"] .update-time').html(timeString);
   }
   setInterval(updateTime, 500);
 });

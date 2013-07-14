@@ -47,20 +47,12 @@
 					</p>
 				</section>
 
-				<section data-type="time">
-					<h1 class="update-time monospace"></h1>
-				</section>
-
 				<section data-type="video">
 					<h1>Lipo Zero</h1>
 					<h3>G36</h3>
 					<p>
             <div data-youtube-video-id="ewD8Yymzu-w"></div>
 					</p>
-				</section>
-
-				<section data-type="time">
-					<h1 class="update-time monospace"></h1>
 				</section>
 
 				<section data-type="video">
@@ -71,12 +63,13 @@
 					</p>
 				</section>
 
-				<section data-type="time">
-					<h1 class="update-time monospace"></h1>
-				</section>
-
 			</div>
-
+      <div class="bar" style="display: block;">
+        <span></span>
+      </div>
+      <div data-type="time" class="time" style="display: block;">
+        <span class="update-time monospace"></span>
+      </div>
 		</div>
 
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -90,7 +83,6 @@
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: false,
-				progress: true,
 				history: true,
 				center: true,
         loop: true,

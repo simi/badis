@@ -1,3 +1,37 @@
 .reveal h1.monospace {
   font-family: monospace;
 }
+
+.reveal .bar {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 20;
+}
+
+.reveal .time {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 175px;
+  z-index: 20;
+}
+
+.reveal .bar span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.reveal .time span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding-left: 30px;
+  padding-top: 6px;
+}
